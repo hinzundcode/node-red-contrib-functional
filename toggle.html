@@ -1,0 +1,33 @@
+<script type="text/javascript">
+	RED.nodes.registerType("toggle", {
+		category: "state",
+		color: "#ded363",
+		defaults: {
+			name: { value: "" },
+			initialState: { value: "true" },
+		},
+		inputs: 1,
+		outputs: 1,
+		icon: "swap.svg",
+		label: function () { return this.name || "toggle"; },
+	});
+</script>
+
+<script type="text/html" data-template-name="toggle">
+	<div class="form-row">
+		<label for="node-input-initialState"><i class="icon-tag"></i> Initial State</label>
+		<select id="node-input-initialState">
+			<option value="true">true</option>
+			<option value="false">false</option>
+		</select>
+	</div>
+	
+	<div class="form-row">
+		<label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+		<input type="text" id="node-input-name" />
+	</div>
+</script>
+
+<script type="text/html" data-help-name="toggle">
+	<p>Switches between true and false for every incoming message.</p>
+</script>
