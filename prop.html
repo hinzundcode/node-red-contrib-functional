@@ -1,0 +1,30 @@
+<script type="text/javascript">
+	RED.nodes.registerType("prop", {
+		category: "data",
+		color: "#ded363",
+		defaults: {
+			name: { value: "" },
+			propertyName: { value: "" },
+		},
+		inputs: 1,
+		outputs: 1,
+		icon: "template.svg",
+		label: function () { return this.name || this.propertyName || "prop"; },
+	});
+</script>
+
+<script type="text/html" data-template-name="prop">
+	<div class="form-row">
+		<label for="node-input-propertyName">Property Name</label>
+		<input type="text" id="node-input-propertyName" />
+	</div>
+	
+	<div class="form-row">
+		<label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+		<input type="text" id="node-input-name" />
+	</div>
+</script>
+
+<script type="text/html" data-help-name="prop">
+	<p>Wraps the payload in an object.</p>
+</script>
