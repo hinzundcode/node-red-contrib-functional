@@ -16,7 +16,7 @@ module.exports = RED => {
 			
 			state = !state;
 			
-			updateState(!state);
+			updateState(state);
 			
 			msg.payload = state;
 			this.send(msg);
