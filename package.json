@@ -5,7 +5,8 @@
 	"node-red": {
 		"nodes": {
 			"toggle": "toggle.js",
-			"prop": "prop.js"
+			"prop": "prop.js",
+			"merge": "merge.js"
 		}
 	}
 }
