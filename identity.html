@@ -1,0 +1,24 @@
+<script type="text/javascript">
+	RED.nodes.registerType("identity", {
+		category: "common",
+		color: "#89b9ca",
+		defaults: {
+			name: { value: "" },
+		},
+		inputs: 1,
+		outputs: 1,
+		icon: "font-awesome/fa-arrow-right",
+		label: function () { return this.name || "identity"; },
+	});
+</script>
+
+<script type="text/html" data-template-name="identity">
+	<div class="form-row">
+		<label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+		<input type="text" id="node-input-name" />
+	</div>
+</script>
+
+<script type="text/html" data-help-name="identity">
+	<p>Passes incoming messages without any changes.</p>
+</script>

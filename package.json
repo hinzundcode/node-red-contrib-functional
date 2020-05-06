@@ -1,12 +1,13 @@
 {
 	"name": "node-red-contrib-functional",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"license": "MIT",
 	"node-red": {
 		"nodes": {
 			"toggle": "toggle.js",
 			"prop": "prop.js",
-			"merge": "merge.js"
+			"merge": "merge.js",
+			"identity": "identity.js"
 		}
 	}
 }
