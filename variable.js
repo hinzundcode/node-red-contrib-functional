@@ -1,7 +1,7 @@
 module.exports = RED => {
 	function VariableNode(config) {
 		RED.nodes.createNode(this, config);
-		this.emitOnChange = config.emitOnChange;
+		this.emitOnChange = config.emitOnChange == "true";
 		
 		this.on("input", msg => {
 			if (msg._cmd == "get") {
