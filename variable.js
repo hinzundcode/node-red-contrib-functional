@@ -5,6 +5,7 @@ module.exports = RED => {
 		
 		this.on("input", (msg, send, done) => {
 			if (msg._cmd == "get") {
+				delete msg._cmd;
 				msg.payload = this.context().get("value");
 				send(msg);
 			} else {
