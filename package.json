@@ -8,7 +8,9 @@
 			"prop": "prop.js",
 			"merge": "merge.js",
 			"identity": "identity.js",
-			"variable": "variable.js"
+			"variable": "variable.js",
+			"cmd-get": "cmd-get.js",
+			"cmd-next": "cmd-next.js"
 		}
 	}
 }
