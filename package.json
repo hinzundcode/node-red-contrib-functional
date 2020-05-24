@@ -7,7 +7,8 @@
 			"toggle": "toggle.js",
 			"prop": "prop.js",
 			"merge": "merge.js",
-			"identity": "identity.js"
+			"identity": "identity.js",
+			"variable": "variable.js"
 		}
 	}
 }

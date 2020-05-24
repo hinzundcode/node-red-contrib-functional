@@ -1,22 +1,22 @@
 <script type="text/javascript">
-	RED.nodes.registerType("toggle", {
+	RED.nodes.registerType("variable", {
 		category: "state",
 		color: "#ded363",
 		defaults: {
 			name: { value: "" },
-			initialState: { value: "true" },
+			emitOnChange: { value: "false" },
 		},
 		inputs: 1,
 		outputs: 1,
-		icon: "trigger.svg",
-		label: function () { return this.name || "toggle"; },
+		icon: "font-awesome/fa-inbox",
+		label: function () { return this.name || "variable"; },
 	});
 </script>
 
-<script type="text/html" data-template-name="toggle">
+<script type="text/html" data-template-name="variable">
 	<div class="form-row">
-		<label for="node-input-initialState">Initial State</label>
-		<select id="node-input-initialState">
+		<label for="node-input-emitOnChange">Emit On Change</label>
+		<select id="node-input-emitOnChange">
 			<option value="true">true</option>
 			<option value="false">false</option>
 		</select>
@@ -28,6 +28,6 @@
 	</div>
 </script>
 
-<script type="text/html" data-help-name="toggle">
-	<p>Switches between true and false for every incoming message.</p>
+<script type="text/html" data-help-name="variable">
+	<p>Stores a payload.</p>
 </script>
